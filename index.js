@@ -130,8 +130,7 @@ const runAction = () => {
 	for (let i = 0; i < maxAttempts; i += 1) {
 		try {
 			run(
-				`${useNpm ? "npm run" : "yarn run"} ${cmd}
-				} ${args}`,
+				`${useNpm ? "npm run" : "yarn run"} ${cmd}`,
 				appRoot,
 			);
 			break;
